@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+:root{
+    --wsect: #fff;
+    --blksect: #000;
+    --ysect: #FFFF33;
+    --gsect: #32CD32;
+}
+
+body{
+    background-color: var(--gsect);
+}
+
+
+/* Navbar */
+
+.top-sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    font-size: 20px;
+    position: relative;
+}
+
+
+
+.top-sect h1{
+    color: var(--ysect);
+    font-size: 40px;
+}
+
+.top-sect ul{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+}
+
+.top-sect li{
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.top-sect a{
+    text-decoration: none;
+    color: var(--wsect);
+}
+
+
+/* Showcase */
+
+
+.font-bg{
+    background: url('images/font-bg.jpg');
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.font-bg .p-1{
+    font-size: 60px;
+    color: var(--wsect);
+    text-transform: uppercase;
+    max-width: 655px;
+    font-weight: 700;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    line-height: 1.3;
+
+}
+ 
+.font-bg .p-2{
+    color: var(--wsect);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -20%);
+    width: 5%;
+    height: 15%;
+    cursor: pointer;
+}
+
+i{  
+    
+    font-size: 30px;
+    margin-top: 10px;
+    color: var(--wsect);
+    border-radius: 50%;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border: 3px solid #FFFF33;
+    text-align: center;
+}
+
+i.fas{
+    color: #FFFF33;
+
+}
+
+
+/* Notes to learn from 4/14 
+-use position: absolute and give the rest realtive, whenever you need to put something on the edge of a the screen or center. 
+padding is used to increase the size of the content and margin is for space between things. margin is not used for putting something on the edge. 
+
+
+/* info area */
+
+.info{
+    background-color: var(--gsect);
+    color:var(--wsect);
+    font-size: 54px;
+    max-width: 1100px;
+    padding: 3rem 5rem;
+
+    
+}
+
+/* 4/ 15 
+
+I learned a lot about the grid and counting the columns and not giving it a width in px and giving it with the grid-template-columns 
+and background % uses for it 
+-keep it simple and have dark go with light text 
+*/
+/* Grid */
+
+.eco-grid{
+    background-color:wheat;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+}
+
+
+.item-1{
+    background: url('images/moutains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    padding: 3rem;
+    margin: 1rem;
+    margin-top: 3rem;
+    grid-column: 1 / span 3;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-2{
+    background-color: blue;
+    padding: 4rem;
+    margin: 1rem;
+    grid-column: 1 / span 2;
+    background: url('images/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.item-3{
+    background-color: purple;
+    padding: 4rem;
+    margin: 1rem;
+    background: url('images/tundra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 120%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+.item-4{
+    background-color: yellow;
+    padding: 4rem;
+    margin: 1rem;
+    background: url('images/grasslands.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position: bottom;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.item-5{
+    background-color:white;
+    padding: 4rem;
+    margin: 1rem;
+    background: url('images/beaches.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position-y: 40%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.item-6{
+    background: url('images/desert.jpg');
+    padding: 4rem;
+    margin: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position-y: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+/* Slider */
+
+.wrap{
+    position: relative;
+}
+
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide1{
+    background:url('images/country-1.jpg');
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+}
+
+.slide2{
+    background:url('images/country-2.jpg');
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+}
+
+.slide3{
+    background:url('images/country-3.jpg');
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.slide4{
+    background:url('images/country-4.jpg');
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.slide-content span{
+    font-size: 5rem;
+    color: #fff;
+    padding: 3.5rem;
+    font-weight: 800;
+}
+
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0; /* so that is stays at the left */
+    margin-left: 30px;
+}
+
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0; /* so that is stays at the right */
+    margin-right: 30px;
+}
+
+
+
+.test{
+    position:relative;
+}
+
+.test img{
+    width: 100%;
+    background-color: #fff;
+}
+
+.test p{
+    color: #000;
+    position: absolute;
+    z-index: 9;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.test .line-1{
+    top: 20%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.test .line-2{
+    top: 30%;
+    left: 20%;
+    font-size: 23px;
+}
+
+.test .line-3{
+    top: 40%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 28px;
+
+}
+
+
+/* Footer */
+
+
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #011c39;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer-left img{
+    width: 50%;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li{
+    line-height: 2em;
+}
+
+
+.footer a{
+    text-decoration: none;
+}
+
+
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a{
+    color: #999;
+}
+
+.footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+
+.footer-left p{
+    padding-right: 20%;
+    color: #999;
+}
+
+.socials  a{
+    background: #364a62;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width:1300px){
+    .item-1, .item-2,
+    .item-3, .item-4, 
+    .item-5, .item-6{
+        padding: 0.5rem;
+        font-size: 35px;
+    }
+
+
+    .slide-content span{
+        font-size: 3rem;
+        
+    }
+
+    
+
+}
+
+@media (max-width:768px){
+    .eco-grid > div {
+        grid-column: 1/ 4
+    }
+    
+      .eco-grid {
+            grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .item-1{
+        grid-column: 1fr;
+        margin: 0.7rem;
+        background-size: auto;
+        text-align: center;
+        padding: 1rem;
+        background-position-y: 40%;
+    }
+
+    .item-2{
+        grid-column: 1fr;
+        padding: 1rem;
+        background-position-y: 10%;  
+        background-size: auto;
+        text-align: center;
+    }
+
+    .item-3{
+        grid-column: 1fr;
+        padding: 1rem;
+        background-position-y: 60%;  
+        background-size: auto;
+        text-align: center;
+
+    }
+
+    .item-4{
+        padding: 1rem;
+        grid-column: 1fr;
+        background-position-y: 10%;  
+        background-size: auto;
+        text-align: center;
+    }
+    
+    .item-6{
+        padding-bottom: 10rem;
+    }
+
+    .slide-content{
+        padding: 3rem;
+        
+    }
+    .slide-content span{
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 12rem;
+    }
+
+    .item-5{
+        padding: 1rem;
+        margin: 1rem;
+        background-position-y: 37%;
+        text-align: center;
+        grid-column: 1fr;
+    
+    }
+
+    .item-4{
+        grid-column: 1fr;
+        margin: 1rem;
+        padding: 1rem;
+        background-position-y: 90%;  
+        background-size: auto;
+        text-align: center;
+    }
+    
+    .item-6{
+        padding: 1rem;
+        margin: 1rem;
+        background-position-y: 35%;
+        text-align: center;
+        grid-column: 1fr;
+    
+    }
+
+    .info{
+        font-size: 39px;
+        
+    }
+
+    .font-bg .p-1{
+        font-size: 38px;
+        margin-left: 2rem;
+        line-height: 1.8;
+    }
+
+    .test .line-1{
+        top: 20%;
+        left: 20%;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .test .line-2{
+        top: 30%;
+        left: 20%;
+    }
+    
+    .test .line-3{
+        top: 40%;
+        left: 20%;
+        font-weight: bold;
+        font-size: 17px;
+    
+    }
+
+
+
+
+    
+
+   
+
+}
+
+@media screen and (min-width:600px){
+    .footer-right > *{
+        flex: 1;
+    }
+
+    .footer-left{
+        flex: 1 0px;
+    }
+
+    .footer-right{
+        flex: 2 0px;
+    }
+}
+
+
+@media (max-width:600px){
+    .footer{
+        padding: 15px;
+    }
+    main{
+        font-size: 55px;
+    }
+}
