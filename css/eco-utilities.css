@@ -1,0 +1,1314 @@
+/*styles for the ecosystem inter page */
+
+
+/* Forest */
+
+.forest{
+    position: relative;
+    background: url('../images/forest-showcase.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.forest p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 12rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 25%;
+}
+
+@media(max-width: 1300px){
+    .forest p{
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 768px){
+    .forest p{
+        font-size: 5rem;
+        left: 15%;
+    }
+}
+
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+/* absolute start from the top left */
+/* make it solid when the opacity is 1 with current*/
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h1{
+    margin-bottom: 10px;
+}
+
+.slide .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+
+.buttons button#next{
+    position: absolute;
+    top: 150%;
+    right: 15px;
+}
+
+.buttons button#prev{
+    position: absolute;
+    top: 150%;
+    left: 15px;
+
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor:pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+@media(max-width:500px){
+    .slide .content{
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide .content p{
+        max-width: 400px;
+    }
+    
+}
+
+.slide:first-child{
+    background: url('../slideshow-img/amazon.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2){
+    background: url('../slideshow-img/gir.jpg') no-repeat center center/cover;
+    
+}
+
+.slide:nth-child(3){
+    background: url('../slideshow-img/daintree.jpg') no-repeat center center/cover;
+    
+}
+
+.slide:nth-child(4){
+    background: url('../slideshow-img/arashiyama.jpg') no-repeat center center/cover;
+    
+}
+
+.slide:nth-child(5){
+    background: url('../slideshow-img/yellow-stone.jpg') no-repeat center center/cover;
+    
+}
+
+
+/* Grasslands */
+
+.grasslands{
+    position: relative;
+    background: url('../images/grasslands-showcase.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.grasslands p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 25%;
+}
+
+
+.slide-g:first-child{
+    background: url('../slideshow-img/italy-g.jpg') no-repeat center center/cover;
+}
+
+.slide-g:nth-child(2){
+    background: url('../slideshow-img/canada.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-g:nth-child(3){
+    background: url('../slideshow-img/brazil-g.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-g:nth-child(4){
+    background: url('../slideshow-img/afri-g.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-g:nth-child(5){
+    background: url('../slideshow-img/austr-g.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+.slide-g{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-g.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-g .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-g .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-g .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-g.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+
+@media(max-width: 1300px){
+    .grasslands p{
+        font-size: 5rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .grasslands p{
+        font-size: 3rem;
+        left: 10%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-g .content p,
+    .slide-g .content h1{
+        max-width: 400px;
+    }
+}
+
+
+@media(max-width:500px){
+    .slide-g .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-g.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-g .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-g .content p
+    .slide-g .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .grasslands g{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+
+
+
+/* Deserts */
+
+.deserts{
+    position: relative;
+    background: url('../images/desert-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 80%;
+
+}
+
+
+.deserts p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 30%;
+}
+
+
+.slide-d:first-child{
+    background: url('../slideshow-img/desert-us.jpg') no-repeat center center/cover;
+}
+
+.slide-d:nth-child(2){
+    background: url('../slideshow-img/Egypt-desert.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-d:nth-child(3){
+    background: url('../slideshow-img/morocco-desert.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-d:nth-child(4){
+    background: url('../slideshow-img/austrialia-desert.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-d:nth-child(5){
+    background: url('../slideshow-img/south-africa-desert.jpg');
+    background-position-y: 65%;
+    background-size: cover;
+    
+}
+
+
+
+
+.slide-d{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-d.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-d .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-d .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-d .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-d.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media(max-width: 1300px){
+    .deserts p{
+        font-size: 8rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .deserts p{
+        font-size: 4rem;
+        left: 25%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-d .content p,
+    .slide-d .content h1{
+        max-width: 400px;
+    }
+}
+
+
+@media(max-width:500px){
+    .slide-d .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-d.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-d .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-d .content p
+    .slide-d .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .deserts p{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+
+
+
+/* Mountains */
+
+.mountains{
+    position: relative;
+    background: url('../images/mountain-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 80%;
+
+}
+
+
+.mountains p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 20%;
+}
+
+
+.slide-m:first-child{
+    background: url('../slideshow-img/switzerland-m.jpg') no-repeat center center/cover;
+}
+
+.slide-m:nth-child(2){
+    background: url('../slideshow-img/norway-m.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-m:nth-child(3){
+    background: url('../slideshow-img/japan-m.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-m:nth-child(4){
+    background: url('../slideshow-img/iceland-m.jpg');
+    background-position-y: 10%;
+    
+}
+
+.slide-m:nth-child(5){
+    background: url('../slideshow-img/himalayas-m.jpg');
+    background-position-y: 65%;
+    background-size: cover;
+    
+}
+
+
+
+
+.slide-m{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-m.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-m .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-m .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-m .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-m.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media(max-width: 1300px){
+    .mountains p{
+        font-size: 5rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .mountains p{
+        font-size: 2rem;
+        left: 25%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-m .content p,
+    .slide-m .content h1{
+        max-width: 400px;
+    }
+
+    .slide-m:nth-child(4){
+        background-position:center;
+        background-size: cover;
+        
+    }
+
+    .slide-m:nth-child(5){
+        background: url('../slideshow-img/himalayas-m.jpg');
+        background-position:bottom;
+        
+    }
+}
+
+
+@media(max-width:500px){
+    .slide-m .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-m.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-d .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-m .content p
+    .slide-m .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .mountains p{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+
+/* Saltwater */
+
+.saltwater{
+    position: relative;
+    background: url('../images/beach-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 80%;
+
+}
+
+
+.saltwater p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 20%;
+}
+
+
+.slide-s:first-child:first-child{
+    background: url('../slideshow-img/fiji-s.jpg') no-repeat center center/cover;
+}
+
+.slide-s:nth-child(2){
+    background: url('../slideshow-img/austrila-s.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-s:nth-child(3){
+    background: url('../slideshow-img/russia-s.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-s:nth-child(4){
+    background: url('../slideshow-img/japan-s.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-s:nth-child(5){
+    background: url('../slideshow-img/hawaii-s.jpg');
+    background-position-y: 65%;
+    background-size: cover;
+    
+}
+
+
+
+
+.slide-s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-s.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-s .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-s .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-s .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-s.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media(max-width: 1300px){
+    .saltwater p{
+        font-size: 5rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .saltwater p{
+        font-size: 2rem;
+        left: 25%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-s .content p,
+    .slide-s .content h1{
+        max-width: 400px;
+    }
+
+    .slide-s:nth-child(4){
+        background-position:center;
+        background-size: cover;
+        
+    }
+
+   
+}
+
+
+@media(max-width:500px){
+    .slide-s .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-s.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-s .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-s .content p
+    .slide-s .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .saltwater p{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+
+/* Freshwater */
+
+.freshwater{
+    position: relative;
+    background: url('../images/freshwater-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 80%;
+
+}
+
+
+.freshwater p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 20%;
+}
+
+
+.slide-f:first-child:first-child{
+    background: url('../slideshow-img/nile-f.jpg');
+    background-position-y: 90%;
+}
+
+.slide-f:nth-child(2){
+    background: url('../slideshow-img/vietnam-f.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-f:nth-child(3){
+    background: url('../slideshow-img/norway-f.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-f:nth-child(4){
+    background: url('../slideshow-img/canada-f.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-f:nth-child(5){
+    background: url('../slideshow-img/india-f.jpg')no-repeat center center/cover;
+
+    
+}
+
+
+
+
+.slide-f{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-f.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-f .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-f .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-f .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-f.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media(max-width: 1300px){
+    .freshwater p{
+        font-size: 5rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .freshwater p{
+        font-size: 2rem;
+        left: 25%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-f .content p,
+    .slide-f .content h1{
+        max-width: 400px;
+    }
+
+    .slide-f:nth-child(4){
+        background-position:center;
+        background-size: cover;
+        
+    }
+
+}
+
+
+@media(max-width:500px){
+    .slide-f .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-f.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-f .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-f .content p
+    .slide-f .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .freshwater p{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+
+
+/* Ice */
+
+.ice{
+    position: relative;
+    background: url('../images/ice-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 80%;
+
+}
+
+
+.ice p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 20%;
+}
+
+
+.slide-i:first-child:first-child{
+    background: url('../slideshow-img/russia-i.jpg')no-repeat center center/cover;
+}
+
+.slide-i:nth-child(2){
+    background: url('../slideshow-img/iceland-i.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-i:nth-child(3){
+    background: url('../slideshow-img/finland-i.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-i:nth-child(4){
+    background: url('../slideshow-img/norway-i.jpg');
+    background-position-y: 80%;
+    background-size:cover;
+
+    
+}
+
+.slide-i:nth-child(5){
+    background: url('../slideshow-img/new-zealand-i.jpg')no-repeat center center/cover;
+
+    
+}
+
+
+
+
+.slide-i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-i.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-i .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-i .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-i .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-i.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media(max-width: 1300px){
+    .ice p{
+        font-size: 5rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .ice p{
+        font-size: 2rem;
+        left: 25%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-i .content p,
+    .slide-i .content h1{
+        max-width: 400px;
+    }
+
+    .slide-i:nth-child(4){
+        background-position:center;
+        background-size: cover;
+        
+    }
+
+}
+
+
+@media(max-width:500px){
+    .slide-i .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-i.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-i .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-i .content p
+    .slide-i .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .ice p{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+
+
+/* Tundra */
+
+.tundra{
+    position: relative;
+    background: url('../images/tundra-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 80%;
+
+}
+
+
+.tundra p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 20%;
+}
+
+
+.slide-t:first-child:first-child{
+    background: url('../slideshow-img/canada-t.jpg')no-repeat center center/cover;
+}
+
+.slide-t:nth-child(2){
+    background: url('../slideshow-img/denmark-t.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-t:nth-child(3){
+    background: url('../slideshow-img/norway-t.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-t:nth-child(4){
+    background: url('../slideshow-img/iceland-t.jpg')no-repeat center center/cover;
+
+
+    
+}
+
+.slide-t:nth-child(5){
+    background: url('../slideshow-img/new-zealand-t.jpg')no-repeat center center/cover;
+
+    
+}
+
+
+
+
+.slide-t{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-t.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+.slide-t .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide-t .content h1{
+    margin-bottom: 10px;
+}
+
+.slide-t .content p{
+    font-size: 16px;
+}
+
+/* have it come in 0.3s is delay*/
+
+.slide-t.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media(max-width: 1300px){
+    .tundra p{
+        font-size: 5rem;
+        left: 25%;
+
+    }
+
+}
+
+@media(max-width: 900px){
+    .tundra p{
+        font-size: 2rem;
+        left: 25%;
+    }
+}
+
+@media(max-width: 768px){
+    .slide-t .content p,
+    .slide-t .content h1{
+        max-width: 400px;
+    }
+
+    .slide-t:nth-child(4){
+        background-position:center;
+        background-size: cover;
+        
+    }
+
+}
+
+
+@media(max-width:500px){
+    .slide-t .content{
+        bottom: -300px;
+        left: 0;
+        width: 90%;
+    }
+
+    .slide-t.current .content {
+        transform: translateY(-300px);
+    }
+
+    .slide-t .content p{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media(max-width:450px){
+    .slide-t .content p
+    .slide-t .content h1{
+        max-width: 200px;
+        font-size: 0.5rem;
+    }
+
+    .tundra p{
+        font-size: 2rem;
+        left: 25%;
+    }
+
+}
+
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/eco-utilities.css">
+    <link rel="stylesheet" href="../css/count-utilities.css">
+    <title>Nature | PHILIPPINES</title>
+</head>
+<body>
+    <section class="font-forest">
+        <div class="top-sect nav-style">
+            <div>
+                <a href="../index.html"><h1>Nature</h1></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-color"><a href="../index.html">Home</a></li>
+                    <li class="nav-color"><a href="../ecosystems.html">Ecosystems</a></li>
+                    <li class="active"><a href="../countries.html">Countries</a></li>
+                    <li class="nav-color"><a href="../about.html">About</a></li>
+                    <li class="nav-color"><a href="../contact.html">Contact</a></li>
+                </ul>
+    
+            </nav>
+        </div>
+        <a href="../countries.html" class="back-eco">
+            Back
+        </a>
+        <div class="phil">
+            <p>Philippines</p>
+        </div>
+    </section>
+
+    <section class="country-places">
+        <a href="../eco-inner/freshwater.html" class="btn">The Beach</a>
+        <a href="../eco-inner/forest.html" class="btn">The Forest</a>
+        <a href="../eco-inner/saltwater.html" class="btn">Rivers</a>
+        <a href="../ecosystems.html" class="btn">More Ecosystems</a>
+    </section>
+
+    <div class="slider">
+        <div class="slide-ph current">
+            <!--Slide-->
+        </div>
+        <div class="slide-ph">
+            <!--Slide-->
+        </div>
+        <div class="slide-ph">
+            <!--Slide-->
+        </div>
+        <div class="slide-ph">
+            <!--Slide-->
+        </div>
+        <div class="slide-ph">
+            <!--Slide-->
+        </div>
+        </div>
+        <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+      
+    
+
+
+    <section class="map">
+        <div>
+            <img src="../images/map.png" alt="">
+            <p class="line-1">Be the first</p>
+            <p class="line-2">To know the best nature</p>
+            <p class="line-3">Sign up with our Newsletter</p>
+            <div class="search">
+                <input type="text" placeholder="Enter Email.." name="search">
+                <button type="submit">Subscribe</i></button>
+            </div>
+        </div>
+        
+       
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+          <img src="#" alt="">
+          <p>Nature</p>
+              <div class="socials">
+                  <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              </div>
+      </div>
+      <ul class="footer-right">
+          <li>
+              <h2>Ecosystems</h2>
+              <ul class="box">
+                  <li><a href="../eco-inner/mountains.html">Mountains</a></li>
+                  <li><a href="../eco-inner/forest.html">Forest</a></li>
+                  <li><a href="../eco-inner/desert.html">Desert</a></li>
+                  <li><a href="../eco-inner/grassland.html">Grasslands</a></li>
+                  <li><a href="../eco-inner/tundra.html">Tundra</a></li>
+                  <li><a href="../eco-inner/freshwater.html">Water</a></li>
+              </ul>
+          </li>
+          <li class="features">
+              <h2>Countries</h2>
+              <ul class="box">
+                  <li><a href="../countries-inter/usa.html">North America</a></li>
+                  <li><a href="../countries-inter/brazil.html">South America</a></li>
+                  <li><a href="../countries-inter/china.html">Asia</a></li>
+                  <li><a href="../countries-inter/italy.html">Europe</a></li>
+                  <li><a href="../countries-inter/south-africa.html">Africa</a></li>
+                  <li><a href="../countries-inter/fiji.html">Pacific</a></li>
+
+              </ul>
+          </li>
+          <li>
+              <h2>About</h2>
+              <ul class="box">
+                  <li><a href="../contact.html">Contact</a></li>
+              </ul>
+          </li>
+      </ul>
+
+      <div class="footer-bottom">
+          <p>All Rights reserved by &copy; Nature | 2021</p>
+      </div>
+  </footer>
+
+
+
+
+    <script>
+        const slides = document.querySelectorAll('.slide-ph');
+        const next = document.querySelector('#next');
+        const prev = document.querySelector('#prev');
+        const auto = true;
+        const intervalTime = 5000;
+        let slideInterval;
+
+
+        const nextSlide = () => {
+        //Get current class
+        const current = document.querySelector('.current');
+        //Remove current class
+        current.classList.remove('current')
+        //Check for next slide 
+        if(current.nextElementSibling){
+            //Add current to next sibling
+            current.nextElementSibling.classList.add('current');
+        } else{
+            //Add current to start 
+            slides[0].classList.add('current');
+        }
+        setTimeout(() => current.classList.remove('current'));
+        }
+
+        const prevSlide = () => {
+        //Get current class
+        const current = document.querySelector('.current');
+        //Remove current class
+        current.classList.remove('current')
+        //Check for prev slide 
+        if(current.previousElementSibling){
+            //Add current to prev sibling
+            current.previousElementSibling.classList.add('current');
+        } else{
+            //Add current to last 
+            slides[slides.length - 1].classList.add('current');
+        }
+        setTimeout(() => current.classList.remove('current'));
+        }
+
+
+        //Buttons events 
+
+        next.addEventListener('click', e =>{
+        nextSlide();
+        //reset for 5 secs
+        if(auto){
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+        });
+
+        prev.addEventListener('click', e =>{
+        prevSlide();
+        //reset for 5 secs
+        if(auto){
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+        });
+
+
+        // Auto slide 
+        if(auto){
+        // Run next slide at interval time 
+        slideInterval = setInterval(nextSlide, intervalTime);
+        }
+
+    </script>
+</body>
+</html>
+
+
+<!-- Make a grid for the ecostystems and the slide show for the countries-->

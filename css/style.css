@@ -1,0 +1,1379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Put all the sub pages with images in a different css page */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+:root{
+    --wsect: #fff;
+    --blksect: #000;
+    --ysect: #FFFF33;
+    --gsect: #32CD32;
+}
+
+body{
+    background-color: var(--gsect);
+}
+
+
+
+
+/* Back Button */
+
+.back-eco{
+    background-color: beige;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+
+}
+
+.back-eco:hover{
+    background-color: gold;
+    transition: 0.5s;
+
+}
+
+
+/* Navbar */
+
+.top-sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    font-size: 20px;
+    position: relative;
+
+}
+
+
+
+.top-sect h1{
+    color: gold;
+    font-size: 40px;
+}
+
+.top-sect ul{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+
+
+}
+
+.top-sect li{
+    list-style-type: none;
+    padding: 0 1.7rem;
+}
+
+.top-sect a{
+    text-decoration: none;
+    color: var(--wsect);
+}
+
+.top-sect a:hover, 
+.top-sect .nav-color a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid yellowgreen;
+}
+
+
+
+ .active a{
+    color:indianred;
+}
+
+
+/* Showcase */
+
+
+.font-bg{
+    background: url('../images/font-bg.jpg');
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.font-bg .p-1{
+    font-size: 60px;
+    color: var(--wsect);
+    text-transform: uppercase;
+    max-width: 655px;
+    font-weight: 700;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    line-height: 1.3;
+
+}
+ 
+.font-bg .p-2{
+    color: var(--wsect);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -20%);
+    width: 5%;
+    height: 15%;
+}
+/*
+i.fas{  
+    
+    font-size: 30px;
+    margin-top: 10px;
+    color: var(--wsect);
+    border-radius: 50%;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border: 3px solid #FFFF33;
+    text-align: center;
+}
+
+
+
+
+/* Notes to learn from 4/14 
+-use position: absolute and give the rest realtive, whenever you need to put something on the edge of a the screen or center. 
+padding is used to increase the size of the content and margin is for space between things. margin is not used for putting something on the edge. 
+
+
+/* info area */
+
+.info{
+    background-color: var(--gsect);
+    color:var(--wsect);
+    font-size: 54px;
+    max-width: 1100px;
+    padding: 3rem 5rem;
+
+    
+}
+
+/* 4/ 15 
+
+I learned a lot about the grid and counting the columns and not giving it a width in px and giving it with the grid-template-columns 
+and background % uses for it 
+-keep it simple and have dark go with light text 
+*/
+/* Grid */
+
+.eco-grid{
+    background-color:wheat;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+}
+
+
+.item-1{
+    background: url('../images/moutains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    padding: 3rem;
+    margin: 1rem;
+    margin-top: 3rem;
+    grid-column: 1 / span 3;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-2{
+    background-color: blue;
+    padding: 4rem;
+    margin: 1rem;
+    grid-column: 1 / span 2;
+    background: url('../images/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.item-3{
+    background-color: purple;
+    padding: 4rem;
+    margin: 1rem;
+    background: url('../images/tundra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 120%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+.item-4{
+    background-color: yellow;
+    padding: 4rem;
+    margin: 1rem;
+    background: url('../images/grasslands.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position: bottom;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.item-5{
+    background-color:white;
+    padding: 4rem;
+    margin: 1rem;
+    background: url('../images/beaches.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position-y: 40%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.item-6{
+    background: url('../images/desert.jpg');
+    padding: 4rem;
+    margin: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position-y: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+/* Slider */
+
+.wrap{
+    position: relative;
+}
+
+
+.slide-content-h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide1-h{
+    background:url('../images/country-1.jpg');
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+}
+
+.slide2-h{
+    background:url('../images/country-2.jpg');
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+}
+
+.slide3-h{
+    background:url('../images/country-3.jpg');
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.slide4-h{
+    background:url('../images/country-4.jpg');
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.slide-content-h span{
+    font-size: 5rem;
+    color: #fff;
+    padding: 3.5rem;
+    font-weight: 800;
+}
+
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0; /* so that is stays at the left */
+    margin-left: 30px;
+}
+
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0; /* so that is stays at the right */
+    margin-right: 30px;
+}
+
+
+
+
+
+/* Map */
+
+
+.map{
+    position:relative;
+}
+
+.map img{
+    width: 100%;
+    background-color: #fff;
+    height: 60vh;
+}
+
+.map p{
+    color: #000;
+    position: absolute;
+    z-index: 9;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.map .line-1{
+    top: 22%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.map .line-2{
+    top: 32%;
+    left: 20%;
+    font-size: 18px;
+}
+
+.map .line-3{
+    top: 40%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.map .search{
+    position: absolute;
+    z-index: 9;
+    top: 30%;
+    left: 50%;
+}
+
+.map .search input, .map .search button{
+    padding: 1rem 2rem;
+}
+
+
+.map .search button{
+    text-transform: uppercase;
+    color: #000;
+    box-shadow: 5px #000;
+    font-weight: bold;
+    background-color: #FFFF33;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.map .search button:hover{
+    background-color: gold;
+}
+
+
+
+
+/* Ecostystem page */
+
+.nav-style{
+    background-color: #fff;
+    padding-bottom: 7rem;
+}
+
+.nav-color a{
+    color: #000;
+}
+
+.eco-grid-pg{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 90vh;
+    background-color: #fff;
+    position: relative;
+
+}
+
+.eco-grid-pg h2{
+    position: absolute;
+    top: -12%;
+    left: 6%;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.eco-1, .eco-2,
+.eco-3, .eco-4,
+.eco-4, .eco-5,
+.eco-6, .eco-7,
+.eco-8{
+    padding: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0.8rem;
+}
+
+.eco-1{
+    background: url('../images/eco-river.jpg');
+    grid-column: 1;
+    background-position-y: 46%;
+}
+
+.eco-2{
+    background:url('../images/eco-forest.jpg');
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+
+.eco-3{
+    background:url('../images/eco-mount.jpg');
+    grid-row: 1;
+    background-position-y: 15%;
+}
+
+.eco-4{
+    background:url('../images/eco-grass.jpg');
+    grid-row: 1 / span 2;
+    background-position-y: 93%;
+}
+
+
+
+
+.eco-5{
+    background:url('../images/eco-tundra.jpg');
+    grid-column: 1 / span 2;
+    background-position-y: 60%;
+}
+
+.eco-6{
+    background:url('../images/eco-desert.jpg');
+    background-size: cover;
+}
+
+.eco-7{
+    background: url('../images/eco-salt.jpg');
+    background-position-x: 50%;
+}
+
+.eco-8{
+    background:url('../images/eco-ice.jpg');
+    grid-column: 1 / span 4;
+    background-position-y: 61%;
+}
+
+
+.eco-1 a, .eco-2 a,
+.eco-3 a, .eco-4 a,
+.eco-5 a, .eco-6 a,
+.eco-7 a, .eco-8 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.eco-1 a:hover, .eco-2 a:hover,
+.eco-3 a:hover, .eco-4 a:hover,
+.eco-5 a:hover, .eco-6 a:hover,
+.eco-7 a:hover, .eco-8 a:hover{
+    color: gold;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Countries */
+
+.countries{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    height: 500vh;
+    font-size: 30px;
+}
+
+.country-1, .country-2,
+.country-3, .country-4,
+.country-5, .country-6,
+.country-7, .country-8,
+.country-9, .country-10,
+.country-11, .country-12,
+.country-13, .country-14,
+.country-15, .country-16,
+.country-17, .country-18,
+.country-19, .country-20,
+.country-21, .country-22{
+    padding: 6rem;
+    margin: 1rem;
+   
+}
+
+.country-1{
+    background: url('../images/Australia.jpg');
+    background-position-y: 80%;
+
+    background-size: cover;
+}
+
+.country-2{
+    background: url('../images/brazil.jpg');
+    background-position-y: 30%;
+    background-size: cover;
+}
+
+.country-3{
+    background: url('../images/canada.jpg');
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.country-4{
+    background: url('../images/china.jpg');
+    background-position-y: 38%;
+    background-size: cover;
+}
+
+.country-5{
+    background: url('../images/denmark.jpg');
+    background-position-y: 38%;
+    background-size: cover;
+}
+
+
+.country-6{
+    background: url('../images/egypt.jpg');
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+.country-7{
+    background: url('../images/finland.jpg');
+    background-position-y: 69%;
+    background-size: cover;
+}
+
+.country-8{
+    background: url('../images/fiji.jpg');
+    background-position-y: 35%;
+    background-size: cover;
+}
+
+.country-9{
+    background: url('../images/iceland.jpg');
+    background-position-y: 52%;
+
+    background-size: cover;
+}
+
+.country-10{
+    background: url('../images/italy.jpg');
+    background-position-y: 60%;
+    background-size: cover;
+}
+
+
+.country-11{
+    background: url('../images/india.jpg');
+    background-position-y: 12%;
+    background-size: cover;
+}
+
+.country-12{
+    background: url('../images/japan.jpg');
+    background-position-y: 42%;
+
+    background-size: cover;
+}
+
+.country-13{
+    background: url('../images/morocco.jpg');
+    background-position-y: 70%;
+    background-size: cover;
+}
+
+.country-14{
+    background: url('../images/new-zeland.jpg');
+    background-position-y: 20%;
+    background-size: cover;
+}
+
+.country-15{
+    background: url('../images/norway.jpg');
+    background-position-y: 90%;
+
+    background-size: cover;
+}
+
+
+.country-16{
+    background: url('../images/PHILIPPINES.jpg');
+    background-position-y: 100%;
+    background-size: cover;
+}
+
+.country-17{
+    background: url('../images/russia.jpg');
+    background-position-y: 20%;
+    background-size: cover;
+}
+
+.country-18{
+    background: url('../images/south-africa.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+
+
+}
+
+
+.country-19{
+    background: url('../images/spain.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+
+}
+
+
+
+.country-20{
+    background: url('../images/switzerland.jpg');
+    background-size: cover;
+    background-position-y: 15%;
+
+}
+
+.country-21{
+    background: url('../images/turkey.jpg');
+    background-size: cover;    
+    background-position-y: 32%;
+
+}
+
+.country-22{
+    background: url('../images/USA.jpg');
+    background-size: cover;  
+    background-position-y:0%;
+  
+
+}
+
+.top-sect h2{
+    position: absolute;
+    top: 50px;
+    left: 7%;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    top: 52%;
+    left: 6%;
+}
+
+
+.country-1 a, .country-2 a,
+.country-3 a, .country-4 a,
+.country-5 a, .country-6 a,
+.country-7 a, .country-8 a,
+.country-9 a, .country-10 a,
+.country-11 a, .country-12 a,
+.country-13 a, .country-14 a,
+.country-15 a, .country-16 a,
+.country-17 a, .country-18 a,
+.country-19 a, .country-20 a,
+.country-21 a, .country-22 a{
+    text-decoration: none;
+    margin: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.country-1 a:hover, .country-2 a:hover,
+.country-3 a:hover, .country-4 a:hover,
+.country-5 a:hover, .country-6 a:hover,
+.country-7 a:hover, .country-8 a:hover,
+.country-9 a:hover, .country-10 a:hover,
+.country-11 a:hover, .country-12 a:hover,
+.country-13 a:hover, .country-14 a:hover,
+.country-15 a:hover, .country-16 a:hover,
+.country-17 a:hover, .country-18 a:hover,
+.country-19 a:hover, .country-20 a:hover,
+.country-21 a:hover, .country-22 a:hover{
+    color: gold;
+}
+
+/* lesson learn have a large area of dark around light colors, not light colors with on the edge of light */
+
+
+
+
+/* About page */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.about .about-info{
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.8rem;
+    font-size: 19px;
+    flex-basis: 45%;
+    position: relative;
+    left: -20px;
+    align-self: flex-start;
+}
+
+.about img{
+    width: 100%;
+    height:100%
+}
+
+.about .about-img{
+    flex-basis: 40%;
+    flex-flow: stretch;
+
+    
+}
+
+/* 4/28/21 
+Learned that I need to imagine what I want before I design it. 
+I tried winging the contact form but I need to imagine first */
+
+/* Contact page */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contact h2{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 38px;
+    padding: 15px;
+    line-height: 1.5;
+
+}
+
+.contact form{
+    margin: 2rem;
+}
+
+.contact form{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color:darkblue;
+    padding: 1.5rem 2rem;
+    line-height: 1.1rem;
+    border-radius: 10px;
+
+}
+
+.contact form input, textarea{
+    outline: none;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.contact textarea{
+    height: 90px;
+}
+
+.contact-info{
+    flex-basis: 35%;
+    line-height: 2.7rem;
+    font-size: 30px;
+    margin-right: 8rem;
+}
+
+.contact-info span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.contact .btn{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: green;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.contact a{
+    color: #000;
+
+}
+
+
+
+.contact .btn:hover{
+    background-color: greenyellow;
+    color: #000;
+    transition: 0.5s;
+    
+}
+
+
+
+
+
+
+/* Footer */
+
+
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: gold;
+    background-color: #011c39;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer-left img{
+    width: 50%;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li{
+    line-height: 2em;
+}
+
+
+.footer a{
+    text-decoration: none;
+}
+
+
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a{
+    color: #999;
+}
+
+.footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+
+.footer-left p{
+    padding-right: 20%;
+    color: gold;
+    margin: 2rem 0;
+}
+
+.socials  a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #999;
+}
+
+
+/* Media Queries */
+
+
+
+
+@media (max-width:1300px){
+    .item-1, .item-2,
+    .item-3, .item-4, 
+    .item-5, .item-6{
+        padding: 0.5rem;
+        font-size: 35px;
+    }
+
+
+    .slide-content span{
+        font-size: 3rem;
+        
+    }
+
+
+}
+
+@media(max-width: 1000px){
+    .contact-info{
+        margin: 0.9rem 0.9rem;
+    }
+
+    .contact-info{
+        font-size: 20px;
+    }
+
+
+    .top-sect ul{
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+
+    .top-sect a:hover, 
+    .top-sect .nav-color a:hover{
+        padding-bottom: 1px;
+    }
+}
+
+
+@media(max-width: 900px){
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .about-info{
+        left: 0;
+
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .contact-info{
+        flex-basis: 100%;
+        line-height: 2.7rem;
+        font-size: 18px;
+        margin-right: 0rem;
+    }
+
+    
+    
+
+    .contact .btn{
+        display: block;
+    }
+
+    .contact form{
+        flex-basis: 100%;
+        margin: 0rem;
+        width: 70%;
+    }
+
+
+}
+
+
+@media(max-width:850px){
+    .countries{
+        grid-template-columns: 1fr;
+        height: 850vh;
+        font-size: 20px;
+              
+    }
+
+    .country-12{
+        background-position-y: 22%;
+    
+    }
+
+    .country-2{
+        background-position-y: 10%;
+    }
+
+    .country-7{
+        background-position-y: 78%;
+    }
+
+    .country-15{
+        background-position-y: 0%;
+    }
+
+ 
+
+    .country-17{
+        background-position-y: 0%;
+    }
+
+    .country-20{
+        background-position-y: 0%;
+    
+    }
+
+    .country-14{
+        background-position-y: 10%;
+        
+    }
+    
+
+    
+
+}
+
+
+
+
+
+@media (max-width:768px){
+    .eco-grid > div {
+        grid-column: 1/ 4
+    }
+    
+      .eco-grid {
+            grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+
+
+    .item-1{
+        grid-column: 1fr;
+        margin: 0.7rem;
+        text-align: center;
+        padding: 1rem;
+        background-position-y: 40%;
+    }
+
+    .item-2{
+        grid-column: 1fr;
+        padding: 1rem;
+        background-position-y: 10%;  
+        text-align: center;
+    }
+
+    .item-3{
+        grid-column: 1fr;
+        padding: 1rem;
+        background-position-y: 60%;  
+        text-align: center;
+
+    }
+
+    .item-4{
+        padding: 1rem;
+        grid-column: 1fr;
+        background-position-y: 10%;  
+        text-align: center;
+    }
+    
+    .item-6{
+        padding-bottom: 10rem;
+    }
+
+    .slide-content{
+        padding: 3rem;
+        
+    }
+    .slide-content span{
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 12rem;
+    }
+
+    .item-5{
+        padding: 1rem;
+        margin: 1rem;
+        background-position-y: 37%;
+        text-align: center;
+        grid-column: 1fr;
+    
+    }
+
+    .item-4{
+        grid-column: 1fr;
+        margin: 1rem;
+        padding: 1rem;
+        background-position-y: 90%;  
+        text-align: center;
+    }
+    
+    .item-6{
+        padding: 1rem;
+        margin: 1rem;
+        background-position-y: 35%;
+        text-align: center;
+        grid-column: 1fr;
+    
+    }
+
+    .info{
+        font-size: 39px;
+        
+    }
+
+    .font-bg .p-1{
+        margin-top: 10rem;
+        font-size: 24px;
+        margin-left: 2rem;
+        line-height: 1.8;
+    }
+
+    .map .line-1{
+        top: 20%;
+        left: 20%;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .map .line-2{
+        top: 35%;
+        left: 20%;
+    }
+    
+    .map .line-3{
+        top: 40%;
+        left: 20%;
+        font-weight: bold;
+        font-size: 22px;
+    
+    }
+
+    .map .search{
+        top: 60%;
+        left: 20%;
+        text-align: center;
+    }
+    
+    .map .search input, .map .search button{
+        padding: 0.5rem 1rem;
+    }
+
+
+    .map .search button{
+        font-size: 9px;
+        display: block;
+        width: 100%;
+    }
+
+    /* if you want things to stack in grid flexbox is helpful and using it in main section, not indivduel place 4/19 */
+    .eco-grid-pg > div {
+        grid-column: 1/ 4;
+    }
+    
+    .eco-grid-pg {
+            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 110vh;
+    }
+
+    .eco-grid-pg h2,
+    .top-sect h2{
+        font-size: 20px;
+    }
+    .eco-grid-pg h2{
+        top: -8%;
+
+    }
+
+
+    .nav-style{
+        background-color: #fff;
+        padding-bottom: 7rem;
+    }
+
+    .eco-1,
+    .eco-3, .eco-4,
+    .eco-4, .eco-5,
+    .eco-6, .eco-7,
+    .eco-8{
+        padding: 1rem;
+        margin: 0.5rem;
+        text-align: center;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+
+   
+
+}
+
+@media screen and (min-width:600px){
+    .footer-right > *{
+        flex: 1;
+    }
+
+    .footer-left{
+        flex: 1 0px;
+    }
+
+    .footer-right{
+        flex: 2 0px;
+    }
+
+
+}
+
+
+@media (max-width:600px){
+    .footer{
+        padding: 15px;
+    }
+    main{
+        font-size: 55px;
+    }
+
+    .slide-content span{
+        font-size: rem;
+        text-align: center;
+        margin-top: 12rem;
+    }
+
+    .map p{
+        font-size: 10px;
+    }
+
+    .wrap span{
+        font-size: 25px;
+    }
+}
+
+
+@media(max-width:400px){
+    .map p{
+        font-size: 8px;
+    }
+
+    .map .line-1, .line-2, .line-3{
+        font-size: 12px;
+    }
+
+    .map .search input, .map .search button{
+        padding: 0.2rem 0.5rem;
+    }
+
+}

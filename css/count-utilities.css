@@ -1,0 +1,2114 @@
+/* Styling the inter country page */
+
+.country-places{
+    width: 100%;
+    background-color: #fff;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+.country-places .btn{
+    border-radius: 20px;
+    background-color: grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 2rem;
+    text-align: center;
+    cursor: pointer;
+    
+
+}
+
+.country-places .btn:hover{
+    background-color: #555;
+    color: gold;
+    transition: 0.5s ease-in-out;
+}
+
+
+.buttons button#next{
+    position: absolute;
+    top: 200%;
+    right: 15px;
+}
+
+.buttons button#prev{
+    position: absolute;
+    top: 200%;
+    left: 15px;
+
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor:pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+/* Australia */
+
+.australia{
+    position: relative;
+    background: url('../images/austrila-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.australia p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 27%;
+}
+
+
+.slide-au:first-child{
+    background: url('../slideshow-img/bondi-austr-slide.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-au:nth-child(2){
+    background: url('../slideshow-img/austrila-slide-out.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-au:nth-child(3){
+    background: url('../slideshow-img/forest-austr.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-au:nth-child(4){
+    background: url('../slideshow-img/advancetown-austr.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-au:nth-child(5){
+    background: url('../slideshow-img/austr-forest-f.jpg');
+    background-position-y: 65%;
+    background-size: cover;
+    
+}
+
+
+
+
+.slide-au{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-au.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .australia p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:768px){
+    .australia p{
+        font-size: 2rem;
+    }
+
+    .country-places{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .country-places .btn{
+        margin: 1rem 0;
+    }
+
+}
+
+
+/* Brazil */
+
+
+/* fix the first image of the slide */
+
+
+.brazil{
+    position: relative;
+    background: url('../images/brazil-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.brazil p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 27%;
+}
+
+
+.slide-br:first-child{
+    background: url('../slideshow-img/brazil-forst-f.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-br:nth-child(2){
+    background: url('../slideshow-img/pampus-brazil.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-br:nth-child(3){
+    background: url('../slideshow-img/brazil-river.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-br:nth-child(4){
+    background: url('../slideshow-img/brazil-water.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-br:nth-child(5){
+    background: url('../slideshow-img/brazil-beach.jpg');
+    background-position-y: 65%;
+    background-size: cover;
+    
+}
+
+
+
+
+.slide-br{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-br.current{
+    opacity: 1;
+}
+
+/* -600px is that it will start off screen */
+
+
+/* have it come in 0.3s is delay*/
+
+
+@media(max-width: 1300px){
+    .brazil p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .brazil p{
+        font-size: 2rem;
+    }
+
+    .country-places{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+    .country-places .btn{
+        margin: 1rem 0;
+    }
+
+}
+
+/* Canada */
+
+
+.canada{
+    position: relative;
+    background: url('../images/canada-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.canada p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 50%;
+}
+
+
+
+.slide-cd:first-child{
+    background: url('../slideshow-img/canada-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-cd:nth-child(2){
+    background: url('../slideshow-img/canada-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-cd:nth-child(3){
+    background: url('../slideshow-img/canada-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-cd:nth-child(4){
+    background: url('../slideshow-img/canada-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-cd:nth-child(5){
+    background: url('../slideshow-img/canada-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-cd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-cd.current{
+    opacity: 1;
+}
+
+@media(max-width: 1300px){
+    .canada p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .canada p{
+        font-size: 2rem;
+    }
+
+
+}
+
+/* China */
+
+.china{
+    position: relative;
+    background: url('../images/china-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.china p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+    left: 27%;
+
+}
+
+
+
+.slide-ch:first-child{
+    background: url('../slideshow-img/china-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-ch:nth-child(2){
+    background: url('../slideshow-img/china-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ch:nth-child(3){
+    background: url('../slideshow-img/china-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ch:nth-child(4){
+    background: url('../slideshow-img/china-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ch:nth-child(5){
+    background: url('../slideshow-img/china-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-ch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-ch.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .china p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .china p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Denmark */
+
+.denmark{
+    position: relative;
+    background: url('../images/denmark-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.denmark p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 20%;
+    left: 27%;
+
+}
+
+
+
+.slide-dm:first-child{
+    background: url('../slideshow-img/denmark-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-dm:nth-child(2){
+    background: url('../slideshow-img/denmark-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-dm:nth-child(3){
+    background: url('../slideshow-img/denmark-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-dm:nth-child(4){
+    background: url('../slideshow-img/denmark-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-dm:nth-child(5){
+    background: url('../slideshow-img/denmark-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-dm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-dm.current{
+    opacity: 1;
+}
+
+
+
+
+
+@media(max-width: 1300px){
+    .denmark p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .denmark p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Egypt */
+
+.egypt{
+    position: relative;
+    background: url('../images/egypt-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.egypt p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 20%;
+    left: 27%;
+
+}
+
+
+
+.slide-eg:first-child{
+    background: url('../slideshow-img/egypt-1.jpg') no-repeat bottom center/cover;;
+
+}
+
+.slide-eg:nth-child(2){
+    background: url('../slideshow-img/egypt-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-eg:nth-child(3){
+    background: url('../slideshow-img/egypt-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-eg:nth-child(4){
+    background: url('../slideshow-img/egypt-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-eg:nth-child(5){
+    background: url('../slideshow-img/egypt-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-eg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-eg.current{
+    opacity: 1;
+}
+
+
+@media(max-width: 1300px){
+    .egypt p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .egypt p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+/* Finland */
+
+.finland{
+    position: relative;
+    background: url('../images/finland-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.finland p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 20%;
+    left: 27%;
+
+}
+
+
+
+.slide-fl:first-child{
+    background: url('../slideshow-img/finland-1.jpg') no-repeat bottom center/cover;;
+
+}
+
+.slide-fl:nth-child(2){
+    background: url('../slideshow-img/finland-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-fl:nth-child(3){
+    background: url('../slideshow-img/finland-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-fl:nth-child(4){
+    background: url('../slideshow-img/finland-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-fl:nth-child(5){
+    background: url('../slideshow-img/finland-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-fl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-fl.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .finland p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .finland p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Fiji */
+
+.fiji{
+    position: relative;
+    background: url('../images/fiji-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.fiji p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 40%;
+    left: 27%;
+
+}
+
+
+
+.slide-fi:first-child{
+    background: url('../slideshow-img/fiji-1.jpg') no-repeat bottom center/cover;;
+
+}
+
+.slide-fi:nth-child(2){
+    background: url('../slideshow-img/fiji-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-fi:nth-child(3){
+    background: url('../slideshow-img/fiji-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-fi:nth-child(4){
+    background: url('../slideshow-img/fiji-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-fi:nth-child(5){
+    background: url('../slideshow-img/fiji-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-fi{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-fi.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .fiji p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .fiji p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+/* Iceland */
+
+.iceland{
+    position: relative;
+    background: url('../images/iceland-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.iceland p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 40%;
+    left: 27%;
+
+}
+
+
+
+.slide-ic:first-child{
+    background: url('../slideshow-img/iceland-1.jpg') no-repeat bottom center/cover;;
+
+}
+
+.slide-ic:nth-child(2){
+    background: url('../slideshow-img/iceland-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ic:nth-child(3){
+    background: url('../slideshow-img/iceland-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ic:nth-child(4){
+    background: url('../slideshow-img/iceland-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ic:nth-child(5){
+    background: url('../slideshow-img/iceland-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-ic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-ic.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .iceland p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .iceland p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Italy */
+
+.italy{
+    position: relative;
+    background: url('../images/italy-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.italy p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 15%;
+    left: 27%;
+
+}
+
+
+
+.slide-it:first-child{
+    background: url('../slideshow-img/italy-1.jpg') no-repeat bottom center/cover;;
+
+}
+
+.slide-it:nth-child(2){
+    background: url('../slideshow-img/italy-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-it:nth-child(3){
+    background: url('../slideshow-img/italy-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-it:nth-child(4){
+    background: url('../slideshow-img/italy-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-it:nth-child(5){
+    background: url('../slideshow-img/italy-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-it{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-it.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .italy p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .italy p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* India */
+
+.india{
+    position: relative;
+    background: url('../images/india-showcase.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 30%;
+
+}
+
+
+.india p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 40%;
+    left: 27%;
+
+}
+
+
+
+.slide-in:first-child{
+    background: url('../slideshow-img/india-1.jpg') no-repeat top center/cover;;
+
+}
+
+.slide-in:nth-child(2){
+    background: url('../slideshow-img/india-2.jpg') no-repeat bottom center/cover;
+    
+}
+
+.slide-in:nth-child(3){
+    background: url('../slideshow-img/india-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-in:nth-child(4){
+    background: url('../slideshow-img/india-4.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-in:nth-child(5){
+    background: url('../slideshow-img/india-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-in.current{
+    opacity: 1;
+}
+
+
+@media(max-width: 1300px){
+    .india p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .india p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Japan */
+
+.japan{
+    position: relative;
+    background: url('../images/japan-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.japan p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 5%;
+    left: 20%;
+
+}
+
+
+
+.slide-jp:first-child{
+    background: url('../slideshow-img/japan-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-jp:nth-child(2){
+    background: url('../slideshow-img/japan-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-jp:nth-child(3){
+    background: url('../slideshow-img/japan-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-jp:nth-child(4){
+    background: url('../slideshow-img/japan-4.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-jp:nth-child(5){
+    background: url('../slideshow-img/japan-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-jp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-jp.current{
+    opacity: 1;
+}
+
+@media(max-width: 1300px){
+    .japan p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .japan p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Morocco */
+
+.morocco{
+    position: relative;
+    background: url('../images/morocco-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.morocco p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 20%;
+    left: 20%;
+
+}
+
+
+
+.slide-mo:first-child{
+    background: url('../slideshow-img/morocco-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-mo:nth-child(2){
+    background: url('../slideshow-img/morocco-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-mo:nth-child(3){
+    background: url('../slideshow-img/morocco-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-mo:nth-child(4){
+    background: url('../slideshow-img/morocco-4.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-mo:nth-child(5){
+    background: url('../slideshow-img/morocco-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-mo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-mo.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .morocco p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .morocco p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+/* New Zealand */
+
+.new-zealand{
+    position: relative;
+    background: url('../images/new-zealand-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.new-zealand p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 20%;
+
+}
+
+
+
+.slide-ze:first-child{
+    background: url('../slideshow-img/new-zealand-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-ze:nth-child(2){
+    background: url('../slideshow-img/new-zealand-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ze:nth-child(3){
+    background: url('../slideshow-img/new-zealand-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ze:nth-child(4){
+    background: url('../slideshow-img/new-zealand-4.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-ze:nth-child(5){
+    background: url('../slideshow-img/new-zealand-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-ze{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-ze.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .new-zealand p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .new-zealand p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+
+/* Norway */
+
+.norway{
+    position: relative;
+    background: url('../images/norway-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.norway p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 20%;
+
+}
+
+
+
+.slide-no:first-child{
+    background: url('../slideshow-img/norway-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-no:nth-child(2){
+    background: url('../slideshow-img/norway-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-no:nth-child(3){
+    background: url('../slideshow-img/norway-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-no:nth-child(4){
+    background: url('../slideshow-img/norway-4.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-no:nth-child(5){
+    background: url('../slideshow-img/norway-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-no{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-no.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .norway p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .norway p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+/* Philipines */
+
+.phil{
+    position: relative;
+    background: url('../images/phil-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.phil p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 20%;
+
+}
+
+
+
+.slide-ph:first-child{
+    background: url('../slideshow-img/phil-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-ph:nth-child(2){
+    background: url('../slideshow-img/phil-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ph:nth-child(3){
+    background: url('../slideshow-img/phil-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ph:nth-child(4){
+    background: url('../slideshow-img/phil-4.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-ph:nth-child(5){
+    background: url('../slideshow-img/phil-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-ph{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-ph.current{
+    opacity: 1;
+}
+
+
+@media(max-width: 1300px){
+    .phil p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .phil p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+/* Russia */
+
+.russia{
+    position: relative;
+    background: url('../images/russia-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.russia p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 20%;
+
+}
+
+
+
+.slide-ru:first-child{
+    background: url('../slideshow-img/russia-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-ru:nth-child(2){
+    background: url('../slideshow-img/russia-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ru:nth-child(3){
+    background: url('../slideshow-img/russia-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-ru:nth-child(4){
+    background: url('../slideshow-img/russia-4.jpg')no-repeat center center/cover;
+
+    
+}
+
+.slide-ru:nth-child(5){
+    background: url('../slideshow-img/russia-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-ru{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-ru.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .russia p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .russia p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+
+
+/* South Africa */
+
+.south-africa{
+    position: relative;
+    background: url('../images/south-africa-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.south-africa p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 5%;
+    left: 10%;
+
+}
+
+
+
+.slide-so:first-child{
+    background: url('../slideshow-img/south-africa-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-so:nth-child(2){
+    background: url('../slideshow-img/south-africa-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-so:nth-child(3){
+    background: url('../slideshow-img/south-africa-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-so:nth-child(4){
+    background: url('../slideshow-img/south-africa-4.jpg');
+    background-size: cover;
+    background-position-y: 60%;
+    
+}
+
+.slide-so:nth-child(5){
+    background: url('../slideshow-img/south-africa-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-so{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-so.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .south-africa p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .south-africa p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* Spain */
+
+.spain{
+    position: relative;
+    background: url('../images/spain-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.spain p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 5%;
+    left: 30%;
+
+}
+
+
+
+.slide-sp:first-child{
+    background: url('../slideshow-img/spain-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-sp:nth-child(2){
+    background: url('../slideshow-img/spain-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-sp:nth-child(3){
+    background: url('../slideshow-img/spain-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-sp:nth-child(4){
+    background: url('../slideshow-img/spain-4.jpg')  no-repeat center center/cover;
+    
+}
+
+.slide-sp:nth-child(5){
+    background: url('../slideshow-img/spain-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-sp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-sp.current{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1300px){
+    .spain p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .spain p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+/* Switzerland */
+
+.switzerland{
+    position: relative;
+    background: url('../images/switzerland-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.switzerland p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 25%;
+
+}
+
+
+
+.slide-sw:first-child{
+    background: url('../slideshow-img/switzerland-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-sw:nth-child(2){
+    background: url('../slideshow-img/switzerland-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-sw:nth-child(3){
+    background: url('../slideshow-img/switzerland-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-sw:nth-child(4){
+    background: url('../slideshow-img/switzerland-4.jpg')  no-repeat center center/cover;
+    
+}
+
+.slide-sw:nth-child(5){
+    background: url('../slideshow-img/switzerland-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-sw{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-sw.current{
+    opacity: 1;
+}
+
+
+
+
+@media(max-width: 1300px){
+    .switzerland p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .switzerland p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+
+/* Turkey */
+
+.turkey{
+    position: relative;
+    background: url('../images/turkey-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.turkey p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 5%;
+
+}
+
+
+
+.slide-tu:first-child{
+    background: url('../slideshow-img/turkey-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-tu:nth-child(2){
+    background: url('../slideshow-img/turkey-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-tu:nth-child(3){
+    background: url('../slideshow-img/turkey-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-tu:nth-child(4){
+    background: url('../slideshow-img/turkey-4.jpg')  no-repeat center center/cover;
+    
+}
+
+.slide-tu:nth-child(5){
+    background: url('../slideshow-img/turkey-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-tu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-tu.current{
+    opacity: 1;
+}
+
+
+
+
+
+@media(max-width: 1300px){
+    .turkey p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .turkey p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+
+/* USA */
+
+.usa{
+    position: relative;
+    background: url('../images/usa-showcase.jpg') center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.usa p{
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 10%;
+    left: 40%;
+
+}
+
+
+
+.slide-us:first-child{
+    background: url('../slideshow-img/usa-1.jpg') no-repeat center center/cover;;
+
+}
+
+.slide-us:nth-child(2){
+    background: url('../slideshow-img/usa-2.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-us:nth-child(3){
+    background: url('../slideshow-img/usa-3.jpg') no-repeat center center/cover;
+    
+}
+
+.slide-us:nth-child(4){
+    background: url('../slideshow-img/usa-4.jpg')  no-repeat center center/cover;
+    
+}
+
+.slide-us:nth-child(5){
+    background: url('../slideshow-img/usa-5.jpg') no-repeat center center/cover;
+    
+}
+
+
+
+
+
+.slide-us{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide-us.current{
+    opacity: 1;
+}
+
+
+@media(max-width: 1300px){
+    .usa p{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .usa p{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+
+
+
