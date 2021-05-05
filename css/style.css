@@ -551,6 +551,7 @@ and background % uses for it
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #fff;
+    background-size: cover;
     height: 500vh;
     font-size: 30px;
 }
@@ -1106,8 +1107,9 @@ h2{
 @media(max-width:850px){
     .countries{
         grid-template-columns: 1fr;
-        height: 850vh;
+        height: 950vh;
         font-size: 20px;
+        width: 100%;
               
     }
 
