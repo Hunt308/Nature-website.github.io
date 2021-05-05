@@ -60,15 +60,15 @@
             <form action="POST" data-netlify="true">
                 <h2>Contact US</h2>
                 <br>
-                <input type="text" placeholder="Full Name">
+                <input type="text" name="name" placeholder="Full Name" required>
                 <br>
-                <input type="text" placeholder="Email">
+                <input type="text" name="email" placeholder="Email" required>
                 <br>
-                <input type="text" placeholder="Subject">
+                <input type="text" name="subject" placeholder="Subject" required>
                 <br>
-                <textarea placeholder="Message"></textarea>
+                <textarea name="message" placeholder="Message"></textarea>
                 <br>
-                <a href="#" class="btn">Submit</a>
+                <input type="submit" value="Send" class="btn">
 
             </form>
         
