@@ -1021,14 +1021,16 @@ h2{
     .top-sect ul{
         display: flex;
         flex-direction: column;
-        right: 0px;
+        right: 50px;
 
     
     }
 
+
+
     .top-sect a:hover, 
     .top-sect .nav-color a:hover{
-        padding-bottom: 1px;
+        padding-bottom: 0px;
     }
 }
 
@@ -1069,6 +1071,12 @@ h2{
         flex-basis: 100%;
         margin: 0rem;
         width: 70%;
+    }
+
+    .top-sect ul{
+        right: 10px;
+
+    
     }
 
 
@@ -1115,6 +1123,24 @@ h2{
         background-position-y: 10%;
         
     }
+
+    .top-sect ul{
+        right: 0px;
+
+    
+    }
+
+    .font-bg .p-1{
+        margin-top: 10rem;
+        font-size: 24px;
+        margin-left: 2rem;
+        line-height: 1.8;
+    }
+
+    .top-sect ul li{
+        margin-bottom: 5px;
+    
+    }
     
 
     
@@ -1135,9 +1161,6 @@ h2{
     }
 
     .top-sect ul{
-        display: flex;
-        flex-direction: column;
-        right: 0px;
         font-size: 15px;
 
     
@@ -1222,12 +1245,6 @@ h2{
         
     }
 
-    .font-bg .p-1{
-        margin-top: 10rem;
-        font-size: 24px;
-        margin-left: 2rem;
-        line-height: 1.8;
-    }
 
     .map .line-1{
         top: 20%;
@@ -1301,6 +1318,7 @@ h2{
         grid-column: 1;
     }
     
+
 
    
 
